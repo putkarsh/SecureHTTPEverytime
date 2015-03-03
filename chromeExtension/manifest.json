@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "SecureHTTPEverytime",
+  "version": "1.0",
+  "description": "SecureHTTPEverytime will let you have a secure HTTPS connection each time you visit your favourite wesites.",
+  "browser_action": {
+    "default_icon": "SecureHTTPEverytime.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+	  "matches": ["http://*/*"],
+      "js": ["secureHTTPEverytime.js"]
+    }
+  ]
+}
